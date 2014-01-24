@@ -7,7 +7,7 @@ describe("Array Intersection", function() {
             var result = filter(base, function(item) {
                 return item > 5;
             });
-            expect(result).to.be.deep.equal([8, 9]);
+            expect(result).to.be.eql([8, 9]);
         });
 
         it("will return an empty array", function() {
@@ -15,7 +15,7 @@ describe("Array Intersection", function() {
             var result = filter(base, function(item) {
                 return false;
             });
-            expect(result).to.be.deep.equal([]);
+            expect(result).to.be.eql([]);
         });
 
         it("will return the same exact array", function() {
@@ -23,7 +23,7 @@ describe("Array Intersection", function() {
             var result = filter(base, function(item) {
                 return true;
             });
-            expect(result).to.be.deep.equal(base);
+            expect(result).to.be.eql(base);
         });
 
     });
@@ -35,7 +35,7 @@ describe("Array Intersection", function() {
                 [1, 2, 3, 8, 9],
                 [2, 5, 9, 10, 12, 14]
             );
-            expect(result).to.be.deep.equal([1, 3, 8]);
+            expect(result).to.be.eql([1, 3, 8]);
         });
 
         it("will remove any item in B, that is also in A", function() {
@@ -43,7 +43,7 @@ describe("Array Intersection", function() {
                 [2, 5, 9, 10, 12, 14],
                 [1, 2, 3, 8, 9]
             );
-            expect(result).to.be.deep.equal([5, 10, 12, 14]);
+            expect(result).to.be.eql([5, 10, 12, 14]);
         });
 
         it("will return an empty array when all of B is present in A", function() {
@@ -51,7 +51,7 @@ describe("Array Intersection", function() {
                 [2, 5],
                 [1, 2, 3, 4, 5, 6]
             );
-            expect(result).to.be.deep.equal([]);
+            expect(result).to.be.eql([]);
         });
 
     });
