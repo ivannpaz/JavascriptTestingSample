@@ -2,8 +2,9 @@
 
 ###Summary:
 
-Excercise solutions for assigned homework. Includes a browser based TDD/BDD test-runner with [Mocha](http://visionmedia.github.io/mocha/) &
-[Chai](http://chaijs.com/).
+Excercise solutions for assigned homework. Includes a browser based TDD/BDD
+test-runner with [Mocha](http://visionmedia.github.io/mocha/),
+[Chai](http://chaijs.com/) & [Sinon.JS](http://sinonjs.org/).
 
 ###Contents:
 
