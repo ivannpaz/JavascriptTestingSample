@@ -38,13 +38,13 @@ describe("permuteChildren", function() {
         d.body.removeChild(d.getElementById('testing_placeholder'));
     });
 
-
     /**
      * shuffle @ /js/permute.js
      */
     describe("shuffle", function() {
 
-        it("will randomize an array items order", function() {
+        it("will randomize an array items order", function()
+        {
             var original = [2, 5, 9, 10, 12, 14],
                 subject = original.slice(0);
 
@@ -54,7 +54,8 @@ describe("permuteChildren", function() {
             expect(result).to.include.members(original);
         });
 
-        it("will work with just one item", function() {
+        it("will work with just one item", function()
+        {
             var original = [1],
                 subject = original.slice(0);
 
@@ -63,7 +64,8 @@ describe("permuteChildren", function() {
             expect(result).to.be.eql(original);
         });
 
-        it("will not fail with an empty array", function() {
+        it("will not fail with an empty array", function()
+        {
             var original = [],
                 subject = original.slice(0);
 
@@ -79,19 +81,17 @@ describe("permuteChildren", function() {
      */
     describe("detachChildren", function() {
 
-        it("will clean the object from its children", function() {
+        it("will clean the object from its children", function()
+        {
             var subject = d.getElementById('fixture_list');
-
             var result = detachChildren(subject);
-
             expect(subject.hasChildNodes()).to.be.eql(false);
         });
 
-        it("will return all detached children that are elements", function() {
+        it("will return all detached children that are elements", function()
+        {
             var subject = d.getElementById('fixture_list');
-
             var result = detachChildren(subject);
-
             expect(result).to.have.length(3);
         });
 
@@ -99,11 +99,13 @@ describe("permuteChildren", function() {
 
     describe("permuteChildren", function() {
 
-        it("will return false if not an HTMLElement", function() {
+        it("will return false if not an HTMLElement", function()
+        {
             expect(permuteChildren('not_an_object')).to.be.eql(false);
         });
 
-        it("will return true if succesful", function() {
+        it("will return true if succesful", function()
+        {
             var subject = d.getElementById('fixture_list');
 
             expect(permuteChildren(subject)).to.be.eql(true);

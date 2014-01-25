@@ -22,12 +22,11 @@ function filter(array, method)
 /**
  * Remove from a, all items present in b.
  *
- * @param  {array} a        Base Operand.
- * @param  {array} b        Substracted Operand.
- * @param  {array} sorted   Perform sorted optimization.
+ * @param  {array}  a
+ * @param  {array}  b
  * @return {array}
  */
-function array_intersect(a, b, sorted)
+function array_intersect(a, b)
 {
     return filter(a, function(item){
         for (var i = 0; i <= b.length - 1; i++) {
