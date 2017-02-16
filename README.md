@@ -3,7 +3,7 @@
 ###Summary:
 
 Excercise solutions for assigned homework. Includes a browser based TDD/BDD
-test-runner with [Mocha](http://visionmedia.github.io/mocha/),
+test-runner with [Mocha](http://mochajs.org/),
 [Chai](http://chaijs.com/) & [Sinon.JS](http://sinonjs.org/).
 
 ###Contents:
